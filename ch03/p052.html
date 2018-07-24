@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择属性值以某个单词结尾的元素</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $('document').ready(function () {
+            $('div[id$="bird"]').css('background', 'red');
+        });
+    </script>
+</head>
+<body>
+<div id="red-bird">red bird</div>
+<div id="blue-bird">blue bird</div>
+<div id="green-bird">green bird</div>
+<div id="black-bird">black bird</div>
+<div id="pink-piggy">pink piggy</div>
+</body>
+</html>

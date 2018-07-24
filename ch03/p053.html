@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>向DOM中添加HTML</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $('document').ready(function () {
+            // $('.content').html('<div class="main">Hello jQuery.</div>');
+            // alert($('.content p').html());
+            $('.content p').html('<div class="main">Hello jQuery.</div>');
+            console.log($('#text').text());
+            $('#text').text("fuck you.");
+        });
+    </script>
+</head>
+<body>
+<div class="content">
+    <p>I run 4 times a week.</p>
+    <p>I lift weights 3 times a week.</p>
+</div>
+<div id="text">
+    I sleep 7 times a week.
+</div>
+</body>
+</html>

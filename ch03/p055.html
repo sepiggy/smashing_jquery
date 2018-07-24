@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>在一个元素内追加或在其最前面插入HTML</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $('document').ready(function () {
+            $('.content').append('<p>I ride my bike 3 times a week.</p>');
+            $('.content').prepend('<p>I ride my horse 3 times a week.</p>');
+            $('.content').before('<p>I ride my cat 3 times a week.</p>');
+            $('.content').after('<p>I ride my piggy 3 times a week.</p>');
+        });
+    </script>
+</head>
+<body>
+<div class="content">
+    <p>I run 4 times a week.</p>
+    <p>I lift weights 3 times a week.</p>
+</div>
+</body>
+</html>

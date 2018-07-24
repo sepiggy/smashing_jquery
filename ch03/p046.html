@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>找出包含特定元素的元素</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $('document').ready(function () {
+            $('.content:has(p)').css('font-size', '36px');
+        });
+    </script>
+
+</head>
+<body>
+<div id="main">
+    <div class="content">
+        <p>This is my content</p>
+    </div>
+    <div class="alternate">
+        <p>This is alternate content.</p>
+    </div>
+</div>
+</body>
+</html>

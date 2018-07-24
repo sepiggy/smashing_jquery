@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用子元素选择器选取元素</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.book.inactive > p').css('display', 'none');
+            $('.book.inactive').append('Sorry this book is sold out!').css('color', 'red');
+        });
+    </script>
+</head>
+<body>
+<div class="book inactive">
+    <p>Travel Guide to NYC</p>
+</div>
+<div class="book active">
+    <p>Travel Guide to San Francisco</p>
+</div>
+<div class="book inactive">
+    <p>Travel Guide to Seattle</p>
+</div>
+<div class="book active">
+    <p>Travel Guide to Miami</p>
+</div>
+<div class="book active">
+    <p>Travel Guide to Palo Alto</p>
+</div>
+</body>
+</html>
